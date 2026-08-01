@@ -1,0 +1,101 @@
+'''# when we have multiple condition we can use elif block
+# in elif condition we can use else block but else block is optional
+# In elif condition we can use multiple elif block based on the condition 
+# Syntax:
+if condition:----True State Block 
+    statement
+elif condition:-------TSB
+    statement
+elif condition:--------TSB
+    statement
+elif condition:---------TSB
+    statement
+else:-----------------------False State Block------(optional)
+    statement
+
+'''
+'''
+# wap to check the number is positive, negative or zero using elif condition
+num = int(input("Enter a number: "))
+if num > 0:
+    print("The number is positive.")
+elif num < 0:
+    print("The number is negative.")
+else:
+    print("The number is zero.")
+    
+# wap to check the  given character is alphabet, digit or special character using elif condition
+char = input("Enter a character: ")
+if char.isalpha():
+    print("The character is an alphabet.")
+elif char.isdigit():
+    print("The character is a digit.")
+else:
+    print("The character is a special character.")
+ '''
+''' 
+ # wap to check the given character is uppercase, lowercase or digit without using isupper(), islower() and isdigit() methods
+# without using inbuilt methods
+# its drawback we can pass only one character at a time (single - single character )
+x=eval(input("Enter a character: "))
+if ord("A")<=ord(x)<=ord("Z"):   #-- 65<=character<=90
+    print("The character is uppercase.")
+elif ord("a")<=ord(x)<=ord("z"): #-- 97<=character<=122
+    print("The character is lowercase.")
+elif ord("0")<=ord(x)<=ord("9"): #-- 48<=character<=57
+    print("The character is a digit.")
+else:
+    print("The character is a special character .")
+    
+# with using inbuilt methods 
+# her we can pass multiple data 
+x=eval(input("Enter a character: "))
+if x.isupper():
+    print("The character is uppercase.")
+elif x.islower():
+    print("The character is lowercase.")
+elif x.isdigit():   
+    print("The character is a digit.")
+else:
+    print("The character is a special character .")
+'''
+# wap to print based on the numbers print day name
+
+num=eval(input("Enter a number : "))
+if num==1:
+    print("Monday")
+elif num==2:
+    print("Tuesday")
+elif num==3:
+    print("Wednesday")
+elif num==4:
+    print("Thursday")
+elif num==5:
+    print("Friday")
+elif num==6:
+    print("Saturday")
+elif num==7:
+    print("Sunday") 
+else:
+    print("Invalid number. Please enter a number between 1 to 7.")
+
+#wap to perform the task based on the operator sybmol take user input and perform the operation
+a=eval(input("Enter first number: "))
+b=eval(input("Enter second number: "))
+operator=eval(input("Enter operator: "))
+if operator=="+":
+    print("Addition:",a+b)
+elif operator=="-":
+    print("Subtraction:",a-b)
+elif operator=="*":
+    print("Multiplication:",a*b)
+elif operator=="/":
+    print("Division:",a/b)
+elif operator=="%":
+    print("Modulus:",a%b)
+elif operator=="**":
+    print("Exponent:",a**b)
+elif operator=="//":
+    print("Floor Division:",a//b)
+else:
+    print("Invalid operator. Please enter a valid operator (+, -, *, /, %, **, //).")
