@@ -1,4 +1,4 @@
-'''# wap to print a-z charcter
+"""'''# wap to print a-z charcter
 for i in range(97,123):
     print(chr(i),end=" ")
     '''
@@ -53,6 +53,7 @@ for i in range(len(s)):
 print(d) '''
 
 """
+'''
     1.wap to create a dictionary word and reverse word pair
 s="tomorrow is weekend and non-veg special"
 
@@ -127,11 +128,291 @@ l3=[1,2,3,4]
 d={"apple":45,"mango":67,"cherry":90,"berry":23}
 p={"Kashmir":"india","America":"us","UK":"Toronto","Africa":"Uganda"}
 
-
+'''
 
 #1. WAP to extract only file names
-l= ['forloop.txt', 'http://python.py', 'while.pdf', 'functions.pptx',
-    'lambda.png', 'http://map.py', 'python.pdf', 'http://oops.py']
+#l= ['forloop.txt', 'http://python.py', 'while.pdf', 'functions.pptx',
+  #  'lambda.png', 'http://map.py', 'python.pdf', 'http://oops.py']
 #output:-['forloop', 'python', 'while', 'functions', 'lambda', 'map', 'oops'] 
-Aug 10 - 10:21 am
-    """
+
+""" 
+#1. Word and reverse-word pair
+s = "tomorrow is weekend and non-veg special"
+
+d = {}
+
+for i in s.split():
+    d[i] = i[::-1]
+
+print(d)
+
+#2. Sum of numbers
+s = 'Sony12India567pvt21ltd'
+
+sum = 0
+
+for i in s:
+    if i.isdigit():
+        sum += int(i)
+
+print(sum)
+
+
+s = 'Sony12India567pvt21ltd'
+
+sum = 0
+num = ""
+
+for i in s:
+    if i.isdigit():
+        num += i
+    else:
+        if num:
+            sum += int(num)
+            num = ""
+
+if num:
+    sum += int(num)
+
+print(sum)
+
+
+#3. Missing numbers from 1–10
+l = [1, 2, 3, 4, 6, 7, 10]
+
+for i in range(1, 11):
+    if i not in l:
+        print(i)
+
+
+#4. Remove duplicates without inbuilt function
+d = [1,2,3,4,5,6,7,1,2,3,4]
+
+res = []
+
+for i in d:
+    if i not in res:
+        res.append(i)
+
+print(res)
+
+
+#5. Replace repeated characters with -
+s = "hellohai"
+
+res = ""
+
+for i in s:
+    if s.count(i) > 1:
+        res += "-"
+    else:
+        res += i
+
+print(res)
+
+
+#6. First and last character of each name
+a = ["Sunil", "anil", "Suresh", "Mahesh", "Dinesh"]
+
+for i in a:
+    print(i[0], i[-1])
+
+
+#7. Square of each number
+b = [2,4,5,6,7,1]
+
+res = []
+
+for i in b:
+    res.append(i ** 2)
+
+print(res)
+
+
+#8. Even → square, Odd → cube
+c = [2,4,5,3,7,9]
+
+for i in c:
+    if i % 2 == 0:
+        print(i ** 2)
+    else:
+        print(i ** 3)
+
+
+#9. Square and cube of each number
+d = [2,4,5,1,8,9,10]
+
+res = []
+
+for i in d:
+    res.append((i ** 2, i ** 3))
+
+print(res)
+
+#10. Reverse each name
+names = ["prince","Rekha","Madhu","Sindhu","denga","manga"]
+
+res = []
+
+for i in names:
+    res.append(i[::-1])
+
+print(res)
+
+
+#11. Individual and collection data types
+data = [20.12, True, [10,20], "super", {1,2}, {"a":10}, 100, (8,9)]
+
+individual = []
+collection = []
+
+for i in data:
+    if isinstance(i, (list, tuple, set, dict)):
+        collection.append(i)
+    else:
+        individual.append(i)
+
+print("Individual:", individual)
+print("Collection:", collection)
+
+
+#12. Character and count pair
+char = ["a","M","i","A","M","I","i","H","a","H"]
+
+d = {}
+
+for i in char:
+    if i not in d:
+        d[i] = 1
+    else:
+        d[i] += 1
+
+print(d)
+
+
+#13. Group fruit name and country pair
+d = {"apple":45, "mango":67, "cherry":90, "berry":23}
+
+p = {"Kashmir":"India", "America":"us", "UK":"Toronto", "Africa":"Uganda"}
+
+res = {}
+
+for i in d:
+    for j in p:
+        res[i] = (d[i], p[j])
+        break
+
+print(res)
+
+
+
+d = {"apple":45, "mango":67, "cherry":90, "berry":23}
+
+p = {"Kashmir":"India", "America":"us", "UK":"Toronto", "Africa":"Uganda"}
+
+res = {}
+
+d_values = list(d.values())
+p_values = list(p.values())
+
+for i in range(len(d_values)):
+    res[d_values[i]] = p_values[i]
+
+print(res)
+
+
+{45: 'India', 67: 'us', 90: 'Toronto', 23: 'Uganda'}
+#14. Sum same-index elements
+l1 = [10,20,30,40]
+l2 = [78,44,11,99]
+l3 = [1,2,3,4]
+
+res = []
+
+for i in range(len(l1)):
+    res.append(l1[i] + l2[i] + l3[i])
+
+print(res)
+
+
+#15. Pair values of both dictionaries
+d = {"apple":45, "mango":67, "cherry":90, "berry":23}
+
+p = {"Kashmir":"india", "America":"us", "UK":"Toronto", "Africa":"Uganda"}
+
+res = []
+
+for i in d.values():
+    for j in p.values():
+        res.append((i, j))
+        break
+    p = dict(list(p.items())[1:])
+
+print(res)
+
+
+# another way to pair values of both dictionaries
+
+d = {"apple":45, "mango":67, "cherry":90, "berry":23}
+
+p = {"Kashmir":"india", "America":"us", "UK":"Toronto", "Africa":"Uganda"}
+
+res = []
+
+a = list(d.values())
+b = list(p.values())
+
+for i in range(len(a)):
+    res.append((a[i], b[i]))
+
+print(res)
+#16. Extract only file names
+l = [
+    'forloop.txt',
+    'http://python.py',
+    'while.pdf',
+    'functions.pptx',
+    'lambda.png',
+    'http://map.py',
+    'python.pdf',
+    'http://oops.py'
+]
+
+res = []
+
+for i in l:
+    if "http://" in i:
+        i = i.split("/")[-1]
+
+    i = i.split(".")[0]
+    res.append(i)
+
+print(res)
+
+
+
+
+l = [
+    'forloop.txt',
+    'http://python.py',
+    'while.pdf',
+    'functions.pptx',
+    'lambda.png',
+    'http://map.py',
+    'python.pdf',
+    'http://oops.py'
+]
+
+res = []
+
+for i in l:
+    if "http://" in i:
+        i = i.split("/")[-1]
+
+    i = i.split(".")[0]
+
+    if i not in res:
+        res.append(i)
+
+print(res)
+'''"""
