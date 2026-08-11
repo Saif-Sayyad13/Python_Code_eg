@@ -369,15 +369,20 @@ print(res)
 #16. Extract only file names
 l = [
     'forloop.txt',
-    'http://python.py',
+    'python.py',
     'while.pdf',
     'functions.pptx',
     'lambda.png',
-    'http://map.py',
+    'map.py',
     'python.pdf',
-    'http://oops.py'
+    'oops.py'
 ]
 
+k=[]
+for i in l:
+    m=i.split(".")
+    k.append(m[0])
+ print(k)   
 res = []
 
 for i in l:
@@ -416,3 +421,27 @@ for i in l:
 
 print(res)
 '''"""
+
+
+
+
+
+d = [1,2,3,4,5,6,7,1,2,3,4]
+
+res = []
+
+for i in d:
+    if i not in res:
+        res.append(i)
+
+print(res)
+l1 = [10,20,30,40]
+l2 = [78,44,11,99]
+l3 = [1,2,3,4]
+
+res = []
+
+for i in range(len(l1)):
+    res.append(l1[i] + l2[i] + l3[i])
+
+print(res)
