@@ -136,7 +136,22 @@ string="hello world"
 sub_string="world"
 if sub_string in string:
      print("hai")'''
-#22.wap to check whether a character is in the alphabet or not,if it is alphabet,
+'''#22.wap to check whether a character is in the alphabet or not,if it is alphabet,
 # store the value inside  a dict(key as a character and value as a ascii value)
+d = {}
+user = input("Enter a character: ")
 
- #    23.wap to check whether a character is in uppercase or not,if uppercase,convert to lowercase and store the value inside the dictionary (character as key and ascii as value) take user input
+if len(user) == 1 and user.isalpha():
+    d[user] = ord(user)
+    print("Updated dictionary:", d)
+'''
+'''
+ #    23.wap to check whether a character is in uppercase or not,if uppercase,convert to lowercase
+ # and store the value inside the dictionary (character as key and ascii as value) take user input
+d={}
+a=eval(input('enter kuch to:'))
+if len(a) == 1 and a.isupper():
+    lower_char = a.lower()
+    d[lower_char] = ord(lower_char)
+    print("Updated dictionary:", d)
+ '''

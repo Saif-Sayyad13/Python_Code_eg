@@ -26,3 +26,44 @@ else print the number as it is
 17.wap to check the given number is odd, if it is odd divide it by 2 and print reminder and quotient else print it is even (take user input)
 18.wap to check if the given character is alphabet or Not ,if it is alphabet, create a replica of it 2 times. (take user input)
 '''
+
+
+
+#54
+a= "pass123"
+while True:
+    user = input("Enter your password: ")
+    if user == a:
+        print("Ho giya ")
+        break
+    print("Wrong password try again")
+    
+    
+a = "pass123"
+
+while input("Enter your password: ") != a:
+    print("Wrong password try again")
+
+print("Ho giya")
+
+#55
+a = (10, 22, 33, 44, 55, 60, 77, 88)
+l = []
+for i in range(1, len(a), 2):
+    if a[i] % 2 == 0:
+        l.append(a[i])
+print("Even integers at odd indices:", l)
+
+#56
+l1 = [1, 2, 2, 3, 4, 4, 5]
+l2 = []
+for item in l1:
+    if item not in l2:
+        l2.append(item)
+print("List after removing duplicates:", l2)
+
+hello_guys="don don don"
+if hello_guys=="don don dn":
+    print('accha hai')
+else:
+    print("kon hai ye")

@@ -21,3 +21,43 @@ note:-->max marks is 100
 12.wap to check signal lights
 color=["red","yellow","green"]
 '''
+
+"""#1.wap to check whether the given character is uppercase/lowercase/digit/special
+# (with and without using inbuilt function)
+'''a=eval(input('Kuch  to likho'))
+d=isinstance(str,int)
+if a.isupper():
+    print("bada hai",a)
+elif a.islower():
+    print('chota hai',a)
+elif a.isdigit():
+    print('number hai lala ', a)
+else:
+    print('special admin hai')'''
+#OR
+'''
+user = input("Enter a single character: ")
+if len(user) == 1:
+    ascii_val = ord(user)
+    
+    if 65 <= ascii_val <= 90:
+        print("The character is UPPERCASE.")
+    elif 97 <= ascii_val <= 122:
+        print("The character is lowercase.")
+    elif 48 <= ascii_val <= 57:
+        print("The character is a digit.")
+    else:
+        print("The character is a special character.")
+else:
+    print("Please enter exactly one character.")
+'''
+"""
+#2.wap to check a data is a sequence/iterable/individual data type
+
+#3.wap if input is string return its length,else if input is list pop element,else
+#if input is tuple reverse else invalid input
+#4.wap to check a age belongs to category 0 to 17 child and 18 to 30 ur adult,
+# 31 to 60 ur men,61 to 100 senior citizen,else invalid
+#5.wap to give hike to an employee based on his experience,u should ask employee 
+# date of joining exp 0 to 2 years no hike and 3 to 5 years 5000rs hike,and 6 to 8 years
+# 7000 rs and 9 to n years 10000 rs
