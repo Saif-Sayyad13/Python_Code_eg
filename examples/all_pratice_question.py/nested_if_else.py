@@ -23,3 +23,17 @@ product price should be more than 500
 10.wap to check whether the given number is divisible by 3 and 5,if it is divisible by 3 then
 print "divisible by 3" if it is divisible by 5 then print "divisible by 5" if it is divisible
 by both then print "divisible by both" else print "not divisible by both"'''
+
+
+'''#1.wap to check whether the given number is even and greater than 5 num=2
+a=eval(input("enter a number"))
+if a%2==0 :
+    if a>5:
+        print("mast number hai")
+    else:
+        print("he. he he he eh ")'''
+    
+
+    
+#2.wap to check the number is odd and check if the number is divisible by 7 n=35
+a=eval(input("enter a number"))
