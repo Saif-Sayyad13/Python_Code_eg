@@ -191,3 +191,53 @@ for i in range(rows):
 * * * * * 
 '''
 
+
+'''
+rows = int(input('Enter rows: '))
+columns = int(input('Enter columns: '))
+
+for i in range(1,rows+1):
+    for j in range(1,columns+1):
+        if i%2==0 and j%2==0:
+            print(" ",end=" ")
+        else:
+            print("*",end=" ")
+    print()
+#* * * * * 
+#*   *   * 
+#* * * * * 
+#*   *   * 
+#* * * * * '''
+'''
+rows = int(input('Enter rows: '))
+columns = int(input('Enter columns: '))
+
+for i in range(1,rows+1):
+    for j in range(1,columns+1):
+        if i==j:
+            print("*",end=" ")
+        else:
+            print(" ",end=" ")
+    print()
+#*         
+#  *       
+#   *     
+#     *   
+#        * 
+   '''
+''' 
+rows = int(input('Enter rows: '))
+columns = int(input('Enter columns: '))
+
+for i in range(1,rows+1):
+    for j in range(1,columns+1):
+        if i!=j:
+            print("*",end=" ")
+        else:
+            print(" ",end=" ")
+    print()
+#  * * * * 
+#*   * * * 
+#* *   * * 
+#* * *   * 
+#* * * *  '''
