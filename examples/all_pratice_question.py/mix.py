@@ -97,3 +97,133 @@ for i in range(1, 11):
     # 3. Print the formatted row
     print(f"{num} x {i} = {result}")
 '''
+
+'''#1. Find the second-largest distinct number in a list without using sort() or max().
+a =eval(input('likho')) #[12, 2, 3, 4, 4, 5, 65, 3]
+big=0
+big2=0
+for i in a:
+    if i>big:
+        big2=big
+        big=i
+print(big2)
+'''
+
+'''#2. Given a list of integers, create a new list containing only values that occur exactly once.
+a=[12, 2, 3, 4, 4, 5, 65, 3]
+l=[]
+for i in a:
+    if i not in l:
+        l.append(i)
+print(l)'''
+'''#3. Check whether a string is a palindrome without using slicing ([::-1]) or reversed().
+text = "racecar"
+
+# Assume it is a palindrome until proven otherwise
+is_palindrome = True  
+length = len(text)
+
+# Loop through the first half of the string
+for i in range(length // 2):
+    # Compare character from front with character from back
+    if text[i] != text[length - 1 - i]:
+        is_palindrome = False
+        break  # Stop immediately if letters don't match
+
+print(is_palindrome)  # Output: True
+'''
+
+"""#4. Find the first repeated character in a string. If none repeats, print "No repeat".
+text = "abcdefd"
+seen = []  # List to track characters we already looked at
+result = "No repeat"
+
+for char in text:
+    if char in seen:
+        result = char
+        break  # Stop immediately at the first repeat
+    seen.append(char)
+
+print(result)  # Output: d
+
+#5. Count the frequency of every character in a string using a dictionary.
+text = "apple"
+freq = {}  # Empty dictionary to store counts
+
+for char in text:
+    if char in freq:
+        freq[char] += 1  # If already in dict, add 1
+    else:
+        freq[char] = 1   # If new, start at 1
+
+print(freq)  # Output: {'a': 1, 'p': 2, 'l': 1, 'e': 1}
+
+#6. From a list of numbers, find all pairs whose sum equals a target value. Do not print duplicate pairs.
+nums = [2, 4, 3, 5, 7, 8, 9]
+target = 7
+seen_pairs = []
+
+for i in range(len(nums)):
+    for j in range(i + 1, len(nums)):
+        if nums[i] + nums[j] == target:
+            # Create a small pair and always keep it sorted to easily avoid duplicates
+            pair = sorted([nums[i], nums[j]])
+            if pair not in seen_pairs:
+                seen_pairs.append(pair)
+                print(pair)  # Output:, [3, 4]
+
+#7. Flatten a nested list containing only one nesting level—for example, turn [[1, 2], [3, 4], [5]] into [1, 2, 3, 4, 5].
+nested = [[1, 2], [3, 4], [5]]
+flat = []
+
+# Loop through the outer list, then loop through each inner list
+for sublist in nested:
+    for item in sublist:
+        flat.append(item)
+
+print(flat)  # Output: [1, 2, 3, 4, 5]
+
+#8. Print this pattern for n = 5:
+n = 5
+
+for i in range(1, n + 1):
+    print("*" * i)  # Multiplies the string "*" by the line number
+
+'''*
+**
+***
+****
+*****'''
+#9. Print this number pattern for n = 5:
+n = 5
+
+for i in range(1, n + 1):
+    row = ""
+    for j in range(1, i + 1):
+        row += str(j)  # Add numbers side-by-side as text
+    print(row)
+
+'''1
+12
+123
+1234
+12345'''
+
+#10. Given a list of words, group anagrams together—for example, group "eat", "tea", and "ate"
+#together—using loops and dictionaries
+words = ["eat", "tea", "tan", "ate", "nat", "bat"]
+groups = {}
+
+for w in words:
+    # Sorting a word alphabetically (e.g., "eat" -> "aet") gives it a unique key
+    key = "".join(sorted(w))
+    
+    if key in groups:
+        groups[key].append(w)
+    else:
+        groups[key] = [w]
+
+# Print just the grouped lists
+print(list(groups.values())) 
+# Output: [['eat', 'tea', 'ate'], ['tan', 'nat'], ['bat']]
+"""
