@@ -227,3 +227,50 @@ for w in words:
 print(list(groups.values())) 
 # Output: [['eat', 'tea', 'ate'], ['tan', 'nat'], ['bat']]
 """
+
+a="Jidnyasha"
+aa=" "
+for i in a:
+    aa=i+aa
+print(aa)
+
+
+a="Jidnyasha"
+print(a[::-1])
+
+y="Hello"
+for i in range(len(y)):
+    print(i+100,y[i])
+    
+a=[100,121,134,170]
+for i in a:
+    if i ==121:
+        print(i)
+
+    
+a="Hello"
+for i in a.replace("l","-"):
+    print(i,end=" ")
+
+a=[[1,2,3],[4,5,"hi"]]
+a[1][2]
+
+
+
+
+
+#a="welcome to the club"
+#output 'w':[welcome],'t':[To]
+a = 'welcome to the club'
+d={}
+for i in a.split():
+    d.update({i[0]:(i)}) 
+print(d)
+
+a="India"
+for i in a:
+    if i in "AEIOaeuiou":
+        print(i,ord(a),ord(z)-32)
+        
+    
+
