@@ -27,7 +27,7 @@ else print the number as it is
 18.wap to check if the given character is alphabet or Not ,if it is alphabet, create a replica of it 2 times. (take user input)
 '''
 
-
+'''
 
 #54
 a= "pass123"
@@ -52,7 +52,13 @@ l = []
 for i in range(1, len(a), 2):
     if a[i] % 2 == 0:
         l.append(a[i])
-print("Even integers at odd indices:", l)
+pprint("List after removing duplicates:", l2)
+
+hello_guys="don don don"
+if hello_guys=="don don dn":
+    print('accha hai')
+else:
+    print("kon hai ye")rint("Even integers at odd indices:", l)
 
 #56
 l1 = [1, 2, 2, 3, 4, 4, 5]
@@ -60,10 +66,66 @@ l2 = []
 for item in l1:
     if item not in l2:
         l2.append(item)
-print("List after removing duplicates:", l2)
-
-hello_guys="don don don"
-if hello_guys=="don don dn":
-    print('accha hai')
+'''
+'''
+# wap to display the message as per signal red-stop,green -go,yello-stay
+a=eval(input('enter a signal red,yelloor green in:'))
+if a=="red":
+     print("its red stop")
+elif a=="yellow":
+     print('its yello stay')
+elif a=="green":
+     print('its green go')
 else:
-    print("kon hai ye")
+     print('invaild signal')'''
+     
+'''
+#wap to creat a simple calculator to perform basic operation lik +,-,*,/
+a=eval(input('enter a number'))
+b=eval(input('enter a another  number'))
+print("please select the operation you want to do ")
+add=print("1.ADD")
+sub=print("2.SUB")
+multi=print("3.MULTI")
+div=print("4.DIV")
+
+c=eval(input(" 1,2,3,4"))
+if c==1:
+    print(a+b)
+elif c==2:
+    print(a-b)
+elif c==3:
+    print(a*b)
+elif c==4:
+    print(a/b)
+else:
+    print('invalid selection')'''
+
+'''# wap to findlaargest of 3 per specific number using ternitery operation
+a=1
+b=2
+c=3
+if a>b and a>c:
+    print('a bada hai')
+elif b>a and b>c:
+    print('b bada hai')
+else:
+    print('c bada hai')'''
+    
+a=eval(input('enter a no'))
+l=0
+for i in a:
+    if i>0:
+        l=l+i
+    else:
+        i==0:print()
+print(l)
+
+
+'''
+idia sore under 
+signup FTC 100
+sevirity high 
+
+
+'''

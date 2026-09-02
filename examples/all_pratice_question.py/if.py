@@ -155,3 +155,9 @@ if len(a) == 1 and a.isupper():
     d[lower_char] = ord(lower_char)
     print("Updated dictionary:", d)
  '''
+ 
+ 
+
+
+
+class 

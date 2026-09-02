@@ -54,3 +54,10 @@ target = 9
 print(two_sum(nums, target))
 '''
 
+class name:
+    def __init__(self, name):
+        self.name=name
+    def display(self):
+        print(f"my name is {self.name}")
+n=name("joy")
+n.display()
