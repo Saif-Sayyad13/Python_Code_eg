@@ -82,15 +82,6 @@ object then we can call it as a
 Reference_variable
 """
 
-
-
-
-
-
-
-
-
-
 '''
 class Morning:
     x=900   #class variable
@@ -101,11 +92,6 @@ print(m) #<__main__.Morning object at 0x000001D091851670>
 m1=Morning
 print(m1) #<class '__main__.Morning'>
 '''
-
-
-
-
-
 class Morning:
     x=900   #class variable
     y=200  #class Variable
@@ -195,29 +181,6 @@ it will create separated memorylocation
 
 """
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 '''
 #Address of the Class and object and class Variable
 print(id(Pen)) #2221280202544
@@ -227,16 +190,6 @@ print(id(p.a))#140716491930328
 print(id(p.b)) #140716491930648
 '''
 """
-
-
-
-
-
-
-
-
-
-
 class Employee:
     '''Employeeee Informations'''
     ename="Avii"
