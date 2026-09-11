@@ -13,7 +13,7 @@ class ClassName:
 class-----> keyword
 ClassName---> Name of the class
 pass----->keyword (no operations)
-Pasal---->FirstwordFirst latter uppercase and second word first letter uppercase
+Pascal Case ---->FirstwordFirst latter uppercase and second word first letter uppercase
 """
 """
 
@@ -66,8 +66,8 @@ print(m.y)
 """
 when we create the Class inside the class if we
 store any data  we can access outside by useing
-Two ways------->http://1.By useing Class Name
-                http://2.By useing object
+Two ways------->1.By useing Class Name
+                2.By useing object
 """
 '''
 print(Morning.__dict__)
@@ -147,7 +147,7 @@ print(id(p.b)) #140716491930648
 
 
 
-class Employee:
+"""class Employee:
     '''Employeeee Informations'''
     ename="Avii"
     eid="A12"
@@ -157,6 +157,7 @@ e=Employee()
 # print(Employee.__doc__)
 help(Employee)
 
+"""
 
 
 

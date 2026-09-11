@@ -12,7 +12,6 @@ class Child(Dad):
         print("Dad's Gift")
 
 '''
-from mailcap import subst
 
 '''
 print(dir(Dad))
@@ -42,6 +41,7 @@ c.spam()
 '''
 
 '''
+
 class A:
     def student_data(self,name,age):
         self.name=name

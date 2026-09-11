@@ -118,7 +118,7 @@ result = math.factorial(u)
 print(f"The factorial of {u} is:", result)
 '''
 
-def factorial(n):
+'''def factorial(n):
     if n < 0:
         return "Undefined for negative numbers"
     elif n == 0 or n == 1:
@@ -129,4 +129,73 @@ def factorial(n):
             result *= i
         return result
 print(factorial(5))  # Output: 120
+'''
 
+'''
+# fibonacci
+u=eval(input('enter a number'))
+a,b=0,1
+l=[]
+for i in range(u):
+    l.append(a)
+    a,b=b,a+b
+print(l)'''
+
+
+'''#anagram
+u1=input('enter a word')    
+u2=input('enter a word')
+if sorted(u1)==sorted(u2):
+    print('yes they are anagrams')
+else:
+    print('no they are not anagrams')'''
+    
+    
+'''#factorial
+a=eval(input('enter a number'))
+s=1
+for i in range(1,a+1):
+    s=s*i
+print(s)'''
+
+'''
+list of prime numbers
+u = int(input('enter a number: '))
+l = []
+
+for num in range(2, u + 1):
+    # If num is not divisible by any number before it, it's prime
+    if all(num % i != 0 for i in range(2, num)):
+        l.append(num)
+
+print(l)
+'''
+
+'''a = int(input('enter a number: '))
+
+# A prime number must be greater than 1
+if a <= 1:
+    print("not prime")
+else:
+    # Check if any number from 2 up to (a-1) divides it perfectly
+    if any(a % i == 0 for i in range(2, a)):
+        print("not prime")
+    else:
+        print("prime")'''
+
+
+'''
+a = int(input('enter a number: '))
+
+# 1. Convert to string to easily count digits and loop through them
+num_str = str(a)
+power = len(num_str)
+
+# 2. Calculate the sum of digits raised to the power
+total_sum = sum(int(digit) ** power for digit in num_str)
+
+# 3. Check and print the result
+if total_sum == a:
+    print("Armstrong number")
+else:
+    print("not Armstrong number")'''

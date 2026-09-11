@@ -38,7 +38,7 @@ class Joy:
 j=Joy()
 print(j) #<__main__.Joy object at 0x000001D2E1134710>
 print()
-http://j.show()
+j.show()
 '''
 
 '''
@@ -48,8 +48,8 @@ class Car:
     name="BMW"  #class variable
     @classmethod
     def Data(cls):
-        print(f'car Name is {http://cls.name}')
-http://Car.Data()
+        print(f'car Name is {cls.name}')
+Car.Data()
 
 ##Class variable accessing into the class method
 #by useing ClssName .
@@ -58,12 +58,12 @@ class Car:
     name="BMW"  #class variable
     @classmethod
     def Data(cls):
-        print(f'car Name is {http://Car.name}')
-http://Car.Data()
+        print(f'car Name is {Car.name}')
+Car.Data()
 """
 Note:--->How To access Class Variable into the class method..???
-we Have two ways  http://1.by useing cls Parameters
-                  http://2.By useing ClassName
+we Have two ways  1.by useing cls Parameters
+                  2.By useing ClassName
 """
 '''
 
