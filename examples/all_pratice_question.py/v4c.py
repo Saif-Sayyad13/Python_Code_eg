@@ -142,7 +142,8 @@ for i in range(u):
 print(l)'''
 
 
-'''#anagram
+'''
+#anagram
 u1=input('enter a word')    
 u2=input('enter a word')
 if sorted(u1)==sorted(u2):
@@ -199,3 +200,20 @@ if total_sum == a:
     print("Armstrong number")
 else:
     print("not Armstrong number")'''
+
+'''a=eval(input('enter a number'))
+num=str(a)
+num1=len(num)
+s=0
+for i in num:
+    s=s+int(i)**num1
+if s==a:
+    print('armstrong number')
+else:
+    print('not armstrong number')
+'''
+'''s='swiss'
+for i in s:
+  if s.count(i)==1:
+    print(i)
+    break'''
