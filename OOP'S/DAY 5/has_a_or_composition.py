@@ -151,3 +151,28 @@ t=Trainer("Rahul","F","Fail")
 t.student_result_information()
 
 '''
+
+'''
+class A:
+    a=10
+    def show(self,name,age,city):
+        self.name=name
+        self.age=age
+        self.city=city
+        print(f'my name is {self.name}\n'
+              f'and mine age is {self.age}\n'
+              f'and mine city is {self.city}')
+        
+class B:
+    def display(self,gender,married):
+        self.gender=gender
+        self.married=married
+        print(f'my gender is {self.gender}\n'
+              f'and mine married status is {self.married}')
+
+x=A()
+x.show("Don",28,"Pune")
+print('-------------------------------------')
+y=B()
+y.display("Male","No")'''
+

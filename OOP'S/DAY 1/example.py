@@ -111,3 +111,99 @@ print(first_unique("swiss"))  # Output: 'w'''
 
 
 
+# instance method
+'''class PataNahi:
+    def kon(self):
+        print('haha')
+        
+        
+o=PataNahi()
+o.kon()
+'''
+
+'''class A:
+    def First_method(self,name,age,address):
+        self.name=name
+        self.age=age
+        self.address=address
+        
+    
+    def Second_method(self,sal,year_of_exp):
+        self.sal=sal
+        self.year_of_exp=year_of_exp
+        
+    
+    def Third_methods(self):
+        print(f"{self.name},{self.age},{self.address} ,{self.sal} ,{self.year_of_exp}")
+        
+
+o = A()
+
+o.First_method("Rahul", 25, "Pune")
+o.Second_method(50000, 3)
+
+o.Third_methods()
+
+        '''
+   
+        
+'''
+class A:
+    value=50
+    
+    def First(self):
+        print("aman")
+        
+class B(A):
+    @classmethod
+    def Second(Kon):
+        print('kishor')
+        
+class C(B):
+    @ staticmethod
+    def Third():
+        super().Second()
+        print('mast hai')
+        
+o=C()
+o.First()
+o.Second()
+C.Third()
+
+'''
+# instance methods
+
+'''class A:
+    a=10
+    def demo(self,name,age):
+        self.name=name
+        self.age=age
+        self.a=0
+    def show(self):
+        print(self.name)
+        print(self.age)
+        print(self.a)
+        
+x=A()
+x.demo('aman',23)
+#x.show()
+x.a=+20
+x.show()
+'''
+
+'''class A:
+    def demo(self):
+        print('kaise ho')
+        
+    def show(self):
+        print('hello')
+        a=20
+        print(a)
+        self.demo()
+x=A()
+#x.demo()
+x.show()
+x.a=30
+print(x.a)
+'''
+
