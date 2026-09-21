@@ -443,7 +443,7 @@ p = Person("Prince", 25, addr)
 p.show_details()
 '''
 # Class 1: Engine
-class Engine:
+'''class Engine:
     def start(self):
         print("Engine started...")
 
@@ -469,6 +469,6 @@ class Car:
 c = Car("Tesla")
 c.drive()
 c.park()
-
+'''
 
 
