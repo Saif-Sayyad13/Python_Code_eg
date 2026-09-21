@@ -442,3 +442,33 @@ addr = Address("Bengaluru", "Karnataka", "India")
 p = Person("Prince", 25, addr)
 p.show_details()
 '''
+# Class 1: Engine
+class Engine:
+    def start(self):
+        print("Engine started...")
+
+    def stop(self):
+        print("Engine stopped...")
+
+# Class 2: Car uses Engine (Composition)
+class Car:
+    def __init__(self, brand):
+        
+        self.brand = brand
+        self.engine = Engine()   # Composition: Car HAS an Engine
+
+    def drive(self):
+        print(f"Driving {self.brand} car")
+        self.engine.start()
+
+    def park(self):
+        print(f"Parking {self.brand} car")
+        self.engine.stop()
+
+# Using Car class
+c = Car("Tesla")
+c.drive()
+c.park()
+
+
+
