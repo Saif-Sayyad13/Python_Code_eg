@@ -23,7 +23,8 @@ with open ('RCB.csv','w',newline="") as file:
     x.writerows([["Name",'Subject','Rating'],['A',"PY","*"],['B',"SQL","1.5"],['C',"power bi","2"]])
     
 os.popen("RCB.csv")'''
-import os
+
+'''import os
 print(os.getcwd())
 os.chdir(r"C:\Users\prabh\Desktop\e14")
 import csv
@@ -35,7 +36,7 @@ with open("RCB.csv","w",newline="")as file:
     x.writerows([["Name","sub","Rating"],["A","PY","*"],["B","SQL",1.5],["C","PowerBI",2]])
 os.popen("RCB.csv")
 
-
+'''
 
 
 
