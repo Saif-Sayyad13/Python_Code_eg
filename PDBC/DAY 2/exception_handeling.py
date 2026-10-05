@@ -44,6 +44,40 @@ try:
 except Exception as e:
     print('error',e)
 
+
+# multiple except block with else and finally
+try:
+    print(a.upper())
+except:
+    print('error')
+else:
+    print('no error')
+
+a=[1,2,3]
+try:
+    print(a.append(4))
+except:
+    print('error')
+else:
+    print('no error')
+    
+a=[1,2,3]
+try:
+    print(a.upper())
+except:
+    print('error')
+finally:
+    print('this is finally block')
+
+a=[1,2,3]
+try:
+    print(a.append(4))
+except:
+    print('error')
+else:
+    print('no error')
+finally:
+    print('this is finally block')
 '''
 Exception handling
 
