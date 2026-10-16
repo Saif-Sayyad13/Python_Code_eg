@@ -1,0 +1,13 @@
+'''
+
+Python_Code/
+├── .venv/                 # Your global virtual environment
+├── 01_Data_Analysis/      # Focus on data processing libraries
+│   ├── pandas_basics.py
+│   └── numpy_basics.py
+├── 02_Visualization/       # Focus on plotting libraries
+│   ├── matplotlib_demo.py
+│   └── seaborn_demo.py
+└── 03_Automation/         # Focus on web/system libraries
+    └── script.py
+'''

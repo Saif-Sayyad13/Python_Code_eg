@@ -1,4 +1,18 @@
 '''
+*map is an inbuilt Function, it will pass an element one by one from the iterable to the function.
+(it can be a lambda function, normal function, inbuilt function)
+syntax:
+-------
+map(function_name , iterable 1, iterable2, iterable3, ...)
+*the output of map will be in object format, to get the correct output we should type caste
+(or) for loop.
+*Whenever we are writing "function_name" in a map we should not write function_name with brackets.
+*when we are passing multiple iterables the length should be same length else data lost will be
+Happen.
+*it will pass the same indices of multiple iterable to multiple arguments specified in the function.
+*no. of iterables should be the same as no. of arguments specified in function.
+"""
+
 #
 def mul(x,y):
     return x*y
@@ -81,42 +95,29 @@ print(pairs_dict)
 # Output: {'a': 20, 'b': 35, 'c': 21, 'd': 56}
 '''
 
-
+'''
 
 
 #1-->WAP TO FIND SQUARE OF ALL THE VALUES PRESENT BETWEEN THE RANGE(1 TO 5).
-
-
-
 #2-->WAP TO FIND LENGTH OF EACH AND EVERY WORD PRESENT INSIDE THE GIVEN STRING.
-
 #3-->WAP TO GET THE FOLLOWING O/P:
 I/P='GOOD MORNING'
 O/P={'GOOD':4,'MORNING':7}
-
 #4-->WAP TO FIND FACTORIAL OF ALL THE NUMBERS PRESENT INSIDE THE GIVEN HOMOGENOUS LIST COLLECTION.
-
 #5-->WAP TO GET THE FOLLOWING O/P
 I/P='PYTHON IS EASY'
 O/P={'PYTHON':'python', 'IS':'is', 'EASY':'easy'}
-
 #6-->wap to return if the key is individual returns its value else return its type
 d={10:"ten","hai":"value",(1,2,3):"colln",1.2:"decimal"}
-
 #7-->wap to create a list of 1st characters from each name
 names=["manu","lohit","jivago","wank","yaseen"]
-
-
 #8-->wap to return list of name and length pair
 names1=["laptop","mouse","board","house","week"]
-
-
 #9-->wap to print sum of indices from both list
 l1=[2,3,4,5,6]
 l2=[3,4,5,8,9]
-
-
-
 #10-->wap to make a pair of names and age
 names=["a","b","c","d"]
 age=[20,35,21,56]
+'''
+

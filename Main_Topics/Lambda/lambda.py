@@ -1,3 +1,24 @@
+'''
+LAMBDA FUNCTION/ANONYMOUS FUNCTIONS
+Anonymous function is a function that is defined without a def keyword
+Anonymous function will be defined by using “lambda” keyword
+It can take any number of arguments
+Simple lambda function syntax
+Lambda arg1,arg2,arg3…:expression/return_value
+Lambda function with if-else statement
+Lambda arg1 :True state Block if condition else False state block
+Lambda functions with comprehensions
+Lambda arg1:comprehension
+
+Drawbacks
+*we can’t write return keyword
+*we can’t return multiple values,if we want return explicitly we should enclose in tuple format
+*we can’t use equal(+=)/(=) operator
+*we can’t use for loop (if we want to use then we should write comprehension)
+'''
+
+
+
 '''a=lambda x:x*2
 print(a(5))'''
 '''
