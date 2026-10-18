@@ -49,15 +49,15 @@ Student(name="Rohit",age= 25)'''
 
 '''
 Type of argument while calling the Function
-1. Position argument 
+1. Position argument
 2. Keyword argument
-3. Only Positional Argument 
-4. Only keyword argument  
-5. variable Positional argument. (*args) 
+3. Only Positional Argument
+4. Only keyword argument
+5. variable Positional argument. (*args)
 6. variable keyword argument. (**kw args)
 7. combination of only positional arguments
    and only keyword argument
-8. combination of * args and **kwargs 
+8. combination of * args and **kwargs
 
 
 among 8 the imp is 1,2,5,6 
