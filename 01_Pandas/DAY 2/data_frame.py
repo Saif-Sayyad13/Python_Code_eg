@@ -139,7 +139,7 @@ df.iloc[start:stop,column_number]
 Syntax:-
 df.iloc[[row1,row2]]
 
-'''
+
 print(df.iloc[0:4,2])
 
-print(df.iloc[[]])
+print(df.iloc[[]])'''
