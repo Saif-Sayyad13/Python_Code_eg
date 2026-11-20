@@ -1,8 +1,8 @@
-def show():
+'''def show():
     print("Hello from day1.py!")
     
 x=1000
-
+'''
 
 '''def show(
     name: str,
